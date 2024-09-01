@@ -1,0 +1,345 @@
+.cv--avatar {
+	width: 110px;
+	height: 110px;
+	background: var(--Disabled);
+	object-fit: cover;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 2px solid var(--Disabled);
+}
+.cv--avatar-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* ------------------------------------- section stepper ------------------------------------ */
+.stepper-container .swiper-slide {
+	width: 230px !important ;
+}
+.step-button.createcv-active {
+	background-color: var(--primary);
+	box-shadow: var(--bs-btn-active-shadow);
+}
+.createcv-active:hover {
+	background-color: var(--primary-light);
+	box-shadow: var(--bs-btn-active-shadow);
+}
+
+/* .stepper-container .step {
+	flex: 1 0 230px;
+} */
+
+/* -------------------------------- Create CV forms ----------------------------- */
+/* input ------------------------ */
+.create-cv label {
+	font-weight: 600;
+}
+
+.create-cv input,
+.create-cv textarea,
+.create-cv input:focus,
+.create-cv input:active,
+.create-cv textarea:focus {
+	position: relative;
+	border: var(--border-width) solid var(--input-bg-color);
+	outline: none;
+	color: var(--white);
+	padding: 10px 15px !important;
+	background-color: var(--input-bg-color);
+}
+
+.create-cv input:focus,
+.react-tel-input .form-control:focus,
+.create-cv textarea:focus {
+	border: var(--border-width) solid var(--primary);
+	color: var(--white);
+	box-shadow: none;
+}
+
+.create-cv input:-webkit-autofill,
+.create-cv textarea:-webkit-autofill,
+.create-cv input:-webkit-autofill:focus,
+.create-cv input:-webkit-autofill:active,
+.create-cv textarea:-webkit-autofill:focus,
+.create-cv textarea:-webkit-autofill:active {
+	border: var(--border-width) solid var(--input-bg-color);
+	-webkit-text-fill-color: var(--white);
+	-webkit-background-clip: text;
+	-webkit-box-shadow: 0 0 0px 1000px var(--input-bg-color) inset;
+	transition: background-color 5000s ease-in-out 0s;
+	caret-color: white;
+}
+
+.create-cv input:-webkit-autofill:focus,
+.create-cv input:-webkit-autofill:active,
+.create-cv textarea:-webkit-autofill:focus,
+.create-cv textarea:-webkit-autofill:active {
+	border: var(--border-width) solid var(--primary);
+}
+
+.create-cv textarea {
+	resize: none;
+}
+
+/* date input ------------------------------------- */
+.create-cv .custom-date-input::-webkit-calendar-picker-indicator {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3Cpath d='M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z' fill='%23bf9b30'/%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* mobile number react-tel-input -------------------------- */
+.create-cv .react-tel-input .form-control {
+	position: relative;
+	font-size: 16px;
+	letter-spacing: 0.01rem;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-left: 60px !important;
+	margin-left: 0;
+	background: var(--input-bg-color);
+	border: var(--border-width) solid var(--input-bg-color);
+	border-radius: 5px;
+	line-height: 25px;
+	height: 45.72px;
+	width: 100%;
+	outline: none;
+}
+.create-cv .react-tel-input .form-control:hover {
+	border: var(--border-width) solid var(--input-bg-color);
+}
+.create-cv .react-tel-input .form-control:focus {
+	border: var(--border-width) solid var(--primary);
+}
+
+.create-cv .react-tel-input .form-control::placeholder {
+	color: var(--placeholder);
+}
+
+.create-cv .react-tel-input .selected-flag:hover,
+.create-cv .react-tel-input .flag-dropdown.open,
+.create-cv .react-tel-input .flag-dropdown,
+.create-cv .react-tel-input .flag-dropdown.open .selected-flag,
+.create-cv .react-tel-input .country-list {
+	/* border: var(--border-width) solid var(--input-bg-color); */
+	border: 0;
+	background-color: var(--input-bg-color);
+	color: var(--white);
+	border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+}
+
+.create-cv .react-tel-input .country-list {
+	background-color: rgb(110 110 110 / 94%);
+}
+
+.react-tel-input .country-list .country.highlight,
+.create-cv .react-tel-input .country-list .country:hover {
+	background-color: var(--primary-light-opacity) !important;
+}
+
+.create-cv .react-tel-input .country-list .country .dial-code {
+	color: var(--white);
+}
+
+.create-cv .react-tel-input .flag-dropdown {
+	width: 50px;
+	padding-left: 10px;
+}
+
+/* mobile-div -------------------------- */
+
+.cv_mobile-data {
+	background-color: var(--input-bg-color) !important;
+	border: var(--border-width) solid var(--input-bg-color);
+	padding-left: 15px;
+
+	border-radius: 0.375rem;
+	-webkit-border-radius: 0.375rem;
+}
+.cv_mobile-data:focus {
+	border: var(--border-width) solid var(--primary);
+}
+
+.cv_mobile-data input,
+.cv_mobile-data input:focus {
+	border: none;
+}
+
+/* -------------------------------------------------- */
+
+.circle-plus__icon {
+	margin-top: -48px;
+}
+.cv-del-add__icon svg {
+	font-size: 26px;
+}
+.cv-del-add__icon i {
+	font-size: 23px;
+}
+.cv-del-add__icon {
+	cursor: pointer;
+	color: var(--primary);
+}
+.cv-del-add__icon:hover {
+	color: var(--primary-light);
+}
+.cv-del-add__icon:hover svg {
+	font-size: 28px;
+}
+.cv-del-add__icon:hover i {
+	font-size: 24px;
+}
+
+.click-primary:focus {
+	color: var(--primary);
+	box-shadow: var(--bs-btn-active-shadow);
+}
+.click-primary:hover {
+	color: var(--primary-light);
+	border-color: var(--primary-light);
+}
+
+.click-primary {
+	color: var(--primary);
+}
+.click-primary:focus {
+	color: var(--primary);
+}
+.click-primary:hover {
+	color: var(--primary-light);
+	border-color: var(--primary-light);
+}
+
+.cv-upload-img-container {
+	border: 2px dashed var(--primary);
+	border-spacing: 5px;
+	border-radius: 5px;
+	border-radius: var(--bs-border-radius);
+	-webkit-border-radius: var(--bs-border-radius);
+}
+
+@media (max-width: 991px) {
+	.add-experience-container {
+		background-image: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.add-experience-container {
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-image: repeating-linear-gradient(
+				-14deg,
+				#bf9b30,
+				#bf9b30 13px,
+				transparent 13px,
+				transparent 23px,
+				#bf9b30 23px
+			),
+			repeating-linear-gradient(
+				76deg,
+				#bf9b30,
+				#bf9b30 13px,
+				transparent 13px,
+				transparent 23px,
+				#bf9b30 23px
+			),
+			repeating-linear-gradient(
+				166deg,
+				#bf9b30,
+				#bf9b30 13px,
+				transparent 13px,
+				transparent 23px,
+				#bf9b30 23px
+			),
+			repeating-linear-gradient(
+				256deg,
+				#bf9b30,
+				#bf9b30 13px,
+				transparent 13px,
+				transparent 23px,
+				#bf9b30 23px
+			);
+		background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+		background-position: 0 0, 0 0, 100% 0, 0 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+/* -------------------------------- Create CV template ----------------------------- */
+/* @page {
+	size: A4;
+}
+
+.page {
+	box-sizing: border-box;
+
+	height: 267mm;
+	width: 180mm;
+	padding: 0;
+
+	border: dashed 1px transparent;
+	margin: 10mm 15mm;
+	page-break-after: always;
+} */
+/* cv-part-1 ----------------------- */
+/* .cv-part-1 {
+	min-width: 670px; 
+	min-width: 100%;
+	max-width: 100%;
+	overflow-y: hidden;
+	min-height: 100%;
+	aspect-ratio: 1/1.4142;
+	size: a4;
+} */
+.cv-part-1 {
+	min-width: 670px;
+	max-width: 100%;
+	aspect-ratio: 1/1.4142;
+	/* min-height: 1100px; */
+}
+.cv-squire-info {
+	background-color: var(--Disabled);
+	border-radius: 4px;
+	padding: 8px 8px;
+	overflow: hidden;
+	min-height: 28px;
+}
+.cv-squire-info h6 {
+	color: var(--blue-dark);
+	margin: 0;
+	line-height: 1;
+}
+.cv-section-title::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: var(--blue-dark);
+	margin-top: 8px;
+}
+
+/* cv-part-2 ------------------ */
+
+.education-details {
+	list-style: none;
+}
+.cv-li-dot {
+	position: relative;
+}
+.cv-li-dot::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: -20px;
+	font-size: 50px;
+	background-color: var(--Grey);
+}

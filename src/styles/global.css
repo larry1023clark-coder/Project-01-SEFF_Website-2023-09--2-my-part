@@ -1,0 +1,380 @@
+@font-face {
+	font-family: 'Font Awesome 6 Free';
+	src: url('@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf') format('truetype');
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary: #bf9b30;
+	--primary-light: #e7bc3c;
+	--primary-light-opacity: rgba(231, 188, 60, 0.5);
+	--placeholder: rgba(215, 215, 215, 0.8);
+
+	--input-bg-color: rgb(145 145 145 / 39%);
+	--gray-opacity2: rgba(225 225 225 / 40%);
+	--dropdown-bg-list: rgb(116 115 115 / 90%);
+
+	--white:#fff;
+}
+
+
+.container {
+	width: 90%;
+	max-width: 90%;
+	margin: auto;
+}
+.text_primary {
+	color: var(--primary);
+}
+.height-fit {
+	height: fit-content;
+}
+.width-fit {
+	width: fit-content;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.btn-width {
+	min-width: 160px;
+}
+
+.active-scale {
+	transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.active-scale:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.bg_primary {
+	background-color: var(--primary);
+}
+.bg_input {
+	background-color: var(--dropdown-bg-list);
+}
+.bg_gray2-opc {
+	background-color: var(--gray-opacity2);
+}
+.btn-gray {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--Grey);
+	--bs-btn-border-color: var(--Grey);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--Disabled);
+	--bs-btn-hover-border-color: var(--Grey);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--Grey);
+	--bs-btn-active-border-color: var(--Grey);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--Disabled);
+	--bs-btn-disabled-border-color: var(--Disabled);
+}
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--primary);
+	--bs-btn-border-color: var(--primary);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--primary-light);
+	--bs-btn-hover-border-color: var(--primary);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--primary);
+	--bs-btn-active-border-color: var(--primary);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--Disabled);
+	--bs-btn-disabled-border-color: var(--Disabled);
+}
+.btn-outline-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-border-color: var(--primary);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--primary);
+	--bs-btn-hover-border-color: var(--primary-light);
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--primary);
+	--bs-btn-active-border-color: var(--primary);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-border-width: var(--border-width);
+	--bs-btn-disabled-color: var(--Disabled);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--Disabled);
+	--bs-gradient: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------- */
+:root {
+	--primary: #bf9b30;
+	--primary-light: #e7bc3c;
+	--primary-light-opacity: rgba(231, 188, 60, 0.5);
+	--Green: #34a853;
+	--Red: #ea4335;
+	--Grey: #9d9d9d;
+	--Grey-light: #d0d0d0;
+	--gray-dark: #3a3939;
+	--Black: #1a1919;
+	--Disabled: #e1e1e1;
+	--BlackOpacity: rgb(0 0 0 / 40%);
+	--gray-opacity2: rgba(225 225 225 / 40%);
+	--gray-opacity: rgba(17, 17, 17, 0.5);
+	/* --DarkOpacity: rgba(26, 25, 25, 0.6); */
+	/* --BlackOpacity: rgba(19, 19, 19, 0.6); */
+	--blue-dark: #233a5f;
+	--white: #fff;
+	--border-width: 1.5px;
+
+	--light-color: #e5e5e5;
+
+	--dropdown-bg-list:rgb(116 115 115 / 90%);
+
+	/* --bs-gutter-x: 10rem; */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn-gray {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--Grey);
+	--bs-btn-border-color: var(--Grey);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--Disabled);
+	--bs-btn-hover-border-color: var(--Grey);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--Grey);
+	--bs-btn-active-border-color: var(--Grey);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--Disabled);
+	--bs-btn-disabled-border-color: var(--Disabled);
+}
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--primary);
+	--bs-btn-border-color: var(--primary);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--primary-light);
+	--bs-btn-hover-border-color: var(--primary);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--primary);
+	--bs-btn-active-border-color: var(--primary);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--Disabled);
+	--bs-btn-disabled-border-color: var(--Disabled);
+}
+.btn-outline-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-border-color: var(--primary);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--primary);
+	--bs-btn-hover-border-color: var(--primary-light);
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--primary);
+	--bs-btn-active-border-color: var(--primary);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-border-width: var(--border-width);
+	--bs-btn-disabled-color: var(--Disabled);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--Disabled);
+	--bs-gradient: none;
+}
+
+/* border indicator with transparent bg in hover -- also add --> btn  ------------------------- */
+.outline-indicator {
+	--bs-btn-color: #fff;
+	--bs-btn-border-color: var(--primary);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: transparent;
+	--bs-btn-hover-border-color: var(--primary-light);
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: transparent;
+	--bs-btn-active-border-color: var(--primary);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-border-width: var(--border-width);
+	--bs-btn-disabled-color: var(--Disabled);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--Disabled);
+	--bs-gradient: none;
+}
+
+/* indicator with brown bg in hover -- also add --> btn btn-outline-primary ------------------------------ */
+.btn-indicator {
+	min-width: 55px;
+	min-height: 55px;
+	font-weight: 700;
+	line-height: 1;
+	font-size: 40px;
+}
+.step-button {
+	border: var(--border-width) solid var(--primary);
+	color: var(--white);
+	background-color: transparent;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	box-shadow: var(--bs-btn-box-shadow);
+}
+.step-button.active {
+	background-color: var(--primary);
+	box-shadow: var(--bs-btn-active-shadow);
+}
+
+/* text color and background ---------------------------------------------*/
+.text_primary {
+	color: var(--primary);
+}
+.text_gray {
+	color: var(--Grey);
+}
+.text_green {
+	color: var(--Green);
+}
+.text_red {
+	color: var(--Red);
+}
+.text_black {
+	color: var(--Black);
+}
+.text_blue {
+	color: var(--blue-dark);
+}
+
+.bg_primary {
+	background-color: var(--primary);
+}
+.bg_gray {
+	background-color: var(--Grey);
+}
+.bg_green {
+	background-color: var(--Green);
+}
+.bg_red {
+	background-color: var(--Red);
+}
+.bg_black {
+	background-color: var(--Black);
+}
+.bg_blue {
+	background-color: var(--blue-dark);
+}
+.bg_black-opc {
+	background-color: var(--BlackOpacity);
+}
+.bg_gray-opc {
+	background-color: var(--gray-opacity);
+}
+.bg_gray2-opc {
+	background-color: var(--gray-opacity2);
+}
+
+/* more font sizes ---------------------------------------- */
+
+.fs-22 {
+	font-size: 22px;
+}
+.fs-20 {
+	font-size: 20px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+.fs-14 {
+	font-size: 14px;
+}
+.fs-13 {
+	font-size: 13px;
+}
+.fs-12 {
+	font-size: 12px;
+}
+
+.fs-11 {
+	font-size: 11px;
+}
+.fs-10 {
+	font-size: 10px;
+}
+
+.gap-5 {
+	gap: 1.75rem;
+}
+.gap-6 {
+	gap: 2rem;
+}
+.gap-7 {
+	gap: 2.5rem;
+}
+.gap-8 {
+	gap: 3rem;
+}
+
+.p-6 {
+	padding: 2rem !important;
+}
+.py-6 {
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+.px-6 {
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
+}
+
+.p-7 {
+	padding: 2.5rem !important;
+}
+.py-7 {
+	padding-top: 2.5rem !important;
+	padding-bottom: 2.5rem !important;
+}
+.px-7 {
+	padding-left: 2.5rem !important;
+	padding-right: 2.5rem !important;
+}
+
+.p-8 {
+	padding: 3.5rem !important;
+}
+.py-8 {
+	padding-top: 3.5rem !important;
+	padding-bottom: 3.5rem !important;
+}
+.px-8 {
+	padding-left: 3.5rem !important;
+	padding-right: 3.5rem !important;
+}

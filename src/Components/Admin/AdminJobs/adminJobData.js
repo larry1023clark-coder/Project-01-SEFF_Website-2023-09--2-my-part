@@ -1,0 +1,86 @@
+export const adminSideBarData = [
+	{
+		title: 'Users',
+		link: '/admin-panel/users',
+		content: ['Admins', 'Instructors', 'Student'],
+	},
+	{
+		title: 'Articles',
+		link: '/admin-panel/articles',
+		content: ['Published Articles', 'Scheduled Articles', 'Saved Drafts'],
+	},
+	{
+		title: 'Jobs',
+		link: '/admin-panel/jobs',
+		content: ['Published Jobs', 'Saved Drafts'],
+	},
+	{
+		title: 'Courses',
+		link: '/admin-panel/courses',
+		content: ['Published Courses', 'Scheduled Courses', 'Saved Drafts'],
+	},
+];
+
+export const adminJobsListData = [
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'Open',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 27,
+		field: 'IT & Technology',
+	},
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'Open',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 8,
+		field: 'IT & Technology',
+	},
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'close',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 15,
+		field: 'IT & Technology',
+	},
+
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'close',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 32,
+		field: 'IT & Technology',
+	},
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'close',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 6,
+		field: 'IT & Technology',
+	},
+	{
+		company: "Here's the company name",
+		position: "Here's the position",
+		status: 'close',
+		postedDay: 'Monday',
+		postedDate: 'June 5th',
+		postedTime: '12:30 PM',
+		applications: 3,
+		field: 'IT & Technology',
+	},
+];
